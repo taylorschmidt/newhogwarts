@@ -21,12 +21,13 @@ const h3 = document.createElement('h3')
 h3.innerText = "Ravenclaw"
 container.appendChild(h3)
 
-const petType = document.createElement('h4')
-petType.className = "gecko"
+
+
 const myPet = document.createElement('h4')
-myPet.innerText = "Poe"
-container.appendChild(petType)
-petType.appendChild(myPet)
+myPet.className = 'gecko'
+myPet.innerText = 'Poe'
+container.appendChild(myPet)
+
 
 const myWand = document.createElement('h4')
 myWand.innerText = "Holly Wand with Unicorn Hair Core"
@@ -64,5 +65,18 @@ const beans = document.createElement('li')
 beans.innerText = "Bertie Bott's Every Flavor [Jelly] Beans"
 storage.appendChild(beans)
 
+//year 5
+myWand.remove()
+beer.remove()
 
+const newWand = document.createElement('li')
+newWand.innerText = 'Unicorn Wand 2.0'
 
+storage.insertBefore(newWand, cloak)
+
+newWand.style.color = 'indigo'
+
+myPet.remove()
+
+container.insertBefore(myPet, storage)
+console.log(myPet)
