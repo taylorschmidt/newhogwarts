@@ -14,3 +14,8 @@ body {
 ul, #container {
     list-style-type: none;
 }
+
+table, th, td {
+    border: 1px solid gray;
+    margin: auto;
+}
