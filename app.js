@@ -80,3 +80,28 @@ myPet.remove()
 
 container.insertBefore(myPet, storage)
 console.log(myPet)
+
+//year 6
+
+//remove
+
+var secret = document.querySelectorAll('.secret')
+console.log(secret)
+// secret.remove()
+
+
+for (var element of secret) {
+    element.remove();
+ }
+
+// //set Timeout to show them again
+
+setTimeout(() => {
+    for (var element of secret) {
+        storage.appendChild(element)
+         }
+}, 2000)
+
+leash.className = 'cabbage'
+var cabbage = document.querySelector('.cabbage')
+cabbage.remove()
