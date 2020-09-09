@@ -1,6 +1,13 @@
+img {
+    width: 100vw;
+    height: 35vw
+}
 body {
     background-color: #F8F7FF;
-    text-align: center;
+    text-align: left;
+}
+h1, h5 {
+    text-align: center
 }
 
 .gecko {

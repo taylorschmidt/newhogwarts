@@ -9,23 +9,21 @@ console.log(container)
 const h1 = document.createElement('h1')
 console.log(h1)
 
-h1.innerText = "Hogwarts"
+h1.innerText = "Hogwarts School of Witchcraft and Wizardry"
 container.appendChild(h1)
 
 //year 2
 const h2 = document.createElement('h2')
-h2.innerText = "Taylor"
+h2.innerText = "Name: Taylor"
 container.appendChild(h2)
 
 const h3 = document.createElement('h3')
-h3.innerText = "Ravenclaw"
+h3.innerText = "House: Ravenclaw"
 container.appendChild(h3)
-
-
 
 const myPet = document.createElement('h4')
 myPet.className = 'gecko'
-myPet.innerText = 'Poe'
+myPet.innerText = 'Pet: Poe'
 container.appendChild(myPet)
 
 
@@ -35,6 +33,7 @@ container.appendChild(myWand)
 
 //year 3
 const storage = document.createElement('ul')
+storage.setAttribute('storage', 'trunk')
 container.appendChild(storage)
 
 const beer = document.createElement('li')
@@ -105,3 +104,8 @@ setTimeout(() => {
 leash.className = 'cabbage'
 var cabbage = document.querySelector('.cabbage')
 cabbage.remove()
+
+//Year 7
+document.querySelector('h5').innerText = 'Fall 2018'
+storage.insertBefore(beer, newWand)
+storage.setAttribute('storage', 'chest')
