@@ -6,3 +6,11 @@ body {
 .gecko {
     font-family: fantasy;
 }
+
+.secret {
+    opacity: 0.5;
+}
+
+ul, #container {
+    list-style-type: none;
+}
